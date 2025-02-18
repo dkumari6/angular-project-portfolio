@@ -1,0 +1,13 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh; /* Ensures it expands but allows scrolling */
+  width: 100%;
+  max-width: 1400px; /* Prevents excessive stretching on big screens */
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  box-sizing: border-box;
+}

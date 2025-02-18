@@ -1,1 +1,128 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .todo-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+  }
+  
+  h2 {
+    color: #333;
+  }
+  
+  .spinner {
+    font-size: 16px;
+    color: #ff5722;
+    margin: 10px 0;
+    animation: fade 1s infinite alternate;
+  }
+  
+  @keyframes fade {
+    from { opacity: 1; }
+    to { opacity: 0.5; }
+  }
+  
+  /* Todo List */
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    margin: 5px 0;
+    background: #e3f2fd;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  li:hover {
+    background: #bbdefb;
+  }
+  
+  li.completed {
+    text-decoration: line-through;
+    color: gray;
+  }
+  
+  /* Buttons */
+  button {
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: 0.3s;
+  }
+  
+  .delete-btn {
+    background: #ff5722;
+    color: white;
+  }
+  
+  .delete-btn:hover {
+    background: #e64a19;
+  }
+  
+  /* Form */
+  form {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button[type="submit"] {
+    background: #4caf50;
+    color: white;
+  }
+  
+  button[type="submit"]:hover {
+    background: #388e3c;
+  }
+  
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+  }
+  
+  /* Make the main app container take full height & width */
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Adjust as needed */
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    background-color: #f5f5f5; /* Optional background */
+    box-sizing: border-box;
+  }
+  
+  /* Ensure any child content takes full width */
+  .full-width {
+    width: 100%;
+  }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

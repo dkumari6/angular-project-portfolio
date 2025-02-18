@@ -1,0 +1,11 @@
+<form (ngSubmit)="onSubmit()">
+    <input 
+      type="text" 
+      [(ngModel)]="newTask" 
+      name="newTask" 
+      [ngModelOptions]="{standalone: true}" 
+      placeholder="Add new task..." 
+      required 
+    />
+    <button type="submit"> Add</button>
+  </form>

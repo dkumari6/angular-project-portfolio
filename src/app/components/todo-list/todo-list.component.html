@@ -1,0 +1,27 @@
+<div class="todo-container">
+  <h2>To-Do List</h2>
+
+    <!-- Add Task Form -->
+    <app-todo-form (newTaskAdded)="addTodo($event)"></app-todo-form>
+
+  <!-- Loading Spinner -->
+  <mat-spinner *ngIf="loading" diameter="50"></mat-spinner>
+
+  <!-- Task List (Only show if not loading) -->
+  <div *ngIf="!loading">
+    <div *ngFor="let task of todos" class="task-item">
+      <input type="checkbox" [checked]="task.completed" (change)="toggleCompletion(task.id, !task.completed)">
+      <span class="task-title" [class.completed]="task.completed">{{ task.title }}</span>
+      <span class="task-status">{{ task.status }}</span>
+      <span class="task-priority">{{ task.priority }}</span>
+      <span class="task-date">Due: {{ task.due_date | date: 'yyyy-MM-dd HH:mm' }}</span>
+      <button mat-icon-button color="warn" (click)="deleteTodo(task.id)">
+        <mat-icon>delete</mat-icon>
+      </button>
+    </div>
+  </div>
+</div>
+
+
+
+

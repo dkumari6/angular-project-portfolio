@@ -1,0 +1,8 @@
+.completed-task {
+    background-color: #e0e0e0;  /* Optional background for completed tasks */
+    text-decoration: line-through;  /* Strike-through for the whole task */
+  }
+  
+  .completed {
+    text-decoration: line-through;  /* Strike-through for the task title */
+  }

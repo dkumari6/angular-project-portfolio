@@ -1,0 +1,43 @@
+.todo-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: white; 
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f5faff;
+  padding: 8px;
+  border-radius: 5px;
+  margin-bottom: 8px;
+}
+
+.task-title {
+  font-weight: bold;
+  flex-grow: 1;
+  margin-left: 10px;
+}
+
+.task-status, .task-priority, .task-date {
+  font-size: 0.9em;
+  color: #555;
+  margin: 0 5px;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+mat-spinner {
+  display: block;
+  margin: 50px auto;
+}
